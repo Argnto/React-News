@@ -1,10 +1,10 @@
-type NavBarProps {
-    
-}
+import { Nav } from './NavBar.styles';
  
-const NavBar: React.FC<NavBarProps> = () => {
+const NavBar: React.FC = () => {
     return (
-        
+        <Nav>
+            
+        </Nav>
     );
 }
  
