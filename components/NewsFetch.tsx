@@ -35,8 +35,6 @@ const NewsFetch = () => {
     return (
 
         <div>
-            <h2>Noticias</h2>
-
             {
                 card.map( article => (
                     <NewsCard

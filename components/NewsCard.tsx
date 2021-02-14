@@ -1,4 +1,4 @@
-
+import { Container, Img, Article, Title, Body, Link } from './NewsCard.styles';
 
 const NewsCard = ({ id, title, description, image, link }) => {
 
@@ -6,18 +6,20 @@ const NewsCard = ({ id, title, description, image, link }) => {
 
 
     return (
-        <div>
+        <Container>
             <div>
-                <img src={image} alt={title} width="200" />
+                <Img src={image} alt={title} />
             </div>
-            <div>
-                <strong> {title} </strong>
+            <Article>
+                <Title>
+                <p> {title} </p>
+                </Title>
+                <Body>
                 <p> {description} </p>
-            </div>
-            <div>
-                <a href={link}>Link</a>
-            </div>
-        </div>
+                </Body>
+                <Link><a  href={link} >Visita el sitio web</a></Link>
+            </Article>
+        </Container>
     );
 }
 
