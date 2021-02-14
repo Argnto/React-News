@@ -18,11 +18,14 @@ const NewsFetch = () => {
 
         const news = articles.map(article => {
             return {
-                id: article.id,
+                id: article._id,
                 title: article.title,
                 description: article.description,
                 image: article.imageUrl,
                 link: article.sourceUrl,
+                logo: article.provider.favicon,
+                category: article.category,
+                source: article.provider.name,
             }
         })
 

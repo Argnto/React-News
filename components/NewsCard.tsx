@@ -1,9 +1,6 @@
-import { Container, Img, Article, Title, Body, Link } from './NewsCard.styles';
+import { Container, Img, Article, Title, Body, Link, Footer, Source, } from './NewsCard.styles';
 
-const NewsCard = ({ id, title, description, image, link }) => {
-
-    console.log(id, title, description, image, link);
-
+const NewsCard = ({ title, description, image, link, logo, category, source }) => {
 
     return (
         <Container>
@@ -12,12 +9,19 @@ const NewsCard = ({ id, title, description, image, link }) => {
             </div>
             <Article>
                 <Title>
-                <p> {title} </p>
+                    <p> {title} </p>
                 </Title>
                 <Body>
-                <p> {description} </p>
+                    <p> {description} </p>
                 </Body>
-                <Link><a  href={link} >Visita el sitio web</a></Link>
+                <Footer>
+                    <Source>
+                        <img src={logo} alt={source} />
+                        <p> Fuente: {source} </p>
+                    </Source>
+                    <p> Categoria: {category} </p>
+                    <Link><a href={link} >Visita el sitio web</a></Link>
+                </Footer>
             </Article>
         </Container>
     );
