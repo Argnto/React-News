@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div >
       <Head>
-        <title>React News</title>
+        <title>Noticias</title>
       </Head>
 
       <main>

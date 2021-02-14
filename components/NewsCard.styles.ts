@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-    /* background-color: #F8F8F8; */
     border-radius: 5px;
     box-shadow: #808080 2px 2px 5px;
     display: flex;
@@ -33,7 +32,7 @@ p {
 `;
 
 export const Body = styled.div`
-font-size: 1.1rem;
+font-size: 1rem;
 margin-bottom: 10px;
     
 `;
@@ -48,7 +47,7 @@ export const Link = styled.button`
     border: none;
     border-radius: 10px;
     box-shadow: #808080 1px 1px 3px;
-    height: 25px;
+    height: 30px;
     padding: 5px;
 
     a {
