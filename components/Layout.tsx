@@ -1,3 +1,5 @@
+import NavBar from './NavBar';
+
 type Props= {
     children: React.ReactNode
 }
@@ -5,6 +7,7 @@ type Props= {
 const Layout = ({children}: Props) => {
     return (
         <div>
+            <NavBar />
             {children}
         </div>
     );
